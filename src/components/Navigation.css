@@ -1,0 +1,16 @@
+/* Navigation.css */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    color: blue;
+    padding: 0%;
+}
+  .container{
+    color: aliceblue;
+  }
+  
+  .h5{
+    color: white;
+  }

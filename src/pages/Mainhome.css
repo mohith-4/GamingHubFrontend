@@ -1,0 +1,108 @@
+.mainhome-container {
+  position: relative;
+  background: linear-gradient(135deg, #0a0a0b, rgb(64, 20, 20));
+}
+.Card.Body{
+    background: linear-gradient(135deg, #0a0a0b, rgb(64, 20, 20));
+}
+.logo {
+  animation: rotateLogo 5s infinite linear; /* Adjust the animation duration and timing function as needed */
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.moving-text {
+  position: absolute;
+  top: 35%;
+  font-family: 'Gaming', sans-serif;
+  font-weight: bolder;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8); /* Initial scale to make it pop in */
+  animation: moveText 2s infinite, changeColor 6s infinite; /* Add pop in/out animation */
+  color: antiquewhite;
+  text-shadow: 5px 2px 4px rgba(2, 2, 2, 0.5); 
+  box-shadow: 5px 2px 4px rgba(2, 2, 2, 0.5) ;/* Add shadow */
+}
+.txt2{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8); /* Initial scale to make it pop in */
+  animation: popInOutText 4s infinite, changeColor 6s infinite; /* Add pop in/out animation */
+  color: antiquewhite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+   
+}
+
+@keyframes popInOutText {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0; /* Start and end with opacity 0 for the pop effect */
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes moveText {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%); /* Adjust the vertical position as needed */
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: rgb(245, 170, 227);
+  }
+  50% {
+    color: rgb(160, 181, 232); /* Change to your desired color */
+  }
+  100% {
+    color: rgb(236, 157, 153);
+  }
+}
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  img{
+    border-radius: 10%;
+  }
+  .contact-details {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-details p {
+    margin: 0 20px; /* Adjust the spacing between contact details */
+  }
+
+
+

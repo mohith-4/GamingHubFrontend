@@ -1,0 +1,69 @@
+h5 {
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
+}
+.card{
+  background: 'linear-gradient(135deg, #0a0a0b, rgb(64, 20, 20))'
+}
+card-body{
+    color: green;
+}
+@keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes moveRightToLeft {
+    0% {
+      transform: translateX(100%);
+      color: red ;
+    }
+    100% {
+      transform: translateX(-100%);
+      color: aqua;
+    }
+  }
+
+  .animation-container {
+    margin-left: 100px;
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    height: 60px; /* Adjust the height as needed */
+  }
+
+  .moving-txt {
+    white-space: nowrap;
+    position: absolute;
+    animation:  moveRightToLeft 10s linear infinite ;
+  }
+  @keyframes changeColor {
+    0% {
+      color: rgb(245, 170, 227);
+    }
+    50% {
+      color: rgb(160, 181, 232); /* Change to your desired color */
+    }
+    100% {
+      color: rgb(236, 157, 153);
+    }
+  }
+  h5 {
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+.card{
+  background: 'linear-gradient(135deg, #0a0a0b, rgb(64, 20, 20))'
+}
+card-body{
+    color: green;
+}

@@ -1,0 +1,16 @@
+/* Chat.css */
+
+.chat-container {
+    background-size: cover;
+    background-position: center;
+   /* height: 100vh;  Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+  
+  .cont {
+    /* Add any additional styles for the inner container if needed */
+  }
+  
